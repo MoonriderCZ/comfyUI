@@ -1,0 +1,14 @@
+{
+  "model": "ilustrious\\blendermix_v20.safetensors",
+  "vae": "illustriousXLV20_v10.safetensors",
+  "prompt": "a small wooden house in the forest",
+  "negative": "blurry, distorted",
+  "steps": 30,
+  "cfg": 7,
+  "sampler": "dpmpp_2s_ancestral",
+  "scheduler": "karras",
+  "seed": 123456789,
+  "width": 608,
+  "height": 648,
+  "count": 1
+}
