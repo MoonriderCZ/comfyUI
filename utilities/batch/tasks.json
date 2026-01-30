@@ -1,0 +1,26 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "status": "pending",
+      "workflow": {
+        "nodes": {
+          "1": {
+            "class_type": "KSampler",
+            "inputs": {
+              "seed": 123,
+              "steps": 20,
+              "cfg": 8,
+              "sampler_name": "euler",
+              "scheduler": "normal",
+              "denoise": 1.0,
+              "model": "model1",
+              "positive": "beautiful landscape",
+              "negative": ""
+            }
+          }
+        }
+      }
+    }
+  ]
+}
