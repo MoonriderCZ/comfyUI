@@ -1,0 +1,37 @@
+{
+  "manifest_version": 3,
+  "name": "ComfyUI Workflow Exporter",
+  "version": "0.1.0",
+  "description": "Vytáhne workflow z ComfyUI GUI a pošle ho na lokální Python orchestrátor.",
+  "permissions": [
+    "scripting",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "http://127.0.0.1:8188/*",
+    "http://localhost:8188/*"
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "content/injected.js"
+      ],
+      "matches": [
+        "http://127.0.0.1:8188/*",
+        "http://localhost:8188/*"
+      ]
+    }
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "http://127.0.0.1:8188/*",
+        "http://localhost:8188/*"
+      ],
+      "js": [
+        "content/content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
